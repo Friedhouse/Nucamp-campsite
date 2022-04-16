@@ -1,5 +1,7 @@
 //jQuery scripts
 
+//Carousel Script buttons
+
         $(function() {
             $(".carousel").carousel( { interval: 2000 } );
             $("#carouselButton").click(function(){
@@ -12,6 +14,20 @@
                     $("#carouselButton").children("i").removeClass("fa-play");
                     $("#carouselButton").children("i").addClass("fa-pause"); 
                 }
-            });
-        });
+            })
+
+//Reserve Modal Script
+
+            $("#reserveButton").click(function() {
+                $('#reserveModal').modal('show');
+            })
+        
+
+//Login Modal Script
+
+            $('#loginButton').click(function() {
+                $('#loginModal').modal('show');
+            })
+        })
+
     
